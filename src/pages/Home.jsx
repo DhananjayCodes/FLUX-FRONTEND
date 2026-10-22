@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 import FluxWavePopup from '../components/FluxWavePopup';
+import TechnovisionPopup from '../components/TechnovisionPopup';
 
 // Memoized Ticker for performance
 const MarqueeTicker = memo(() => (
@@ -36,6 +37,9 @@ const Home = () => {
       
       {/* FluxWave 2.0 Poster Popup - Disabled */}
       {/* <FluxWavePopup /> */}
+
+      {/* Technovision 2026 registration popup */}
+      <TechnovisionPopup />
 
       {/* ===== INJECTED ANIMATIONS ===== */}
       <style dangerouslySetInnerHTML={{
