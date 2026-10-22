@@ -28,6 +28,8 @@ const Ideathon = React.lazy(() => import("./pages/Ideathon_26"));
 const LegacySite = React.lazy(() => import("./pages/LegacySite"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const Technovision = React.lazy(() => import("./pages/Technovision_26"));
+const TechnovisionNov2026 = React.lazy(() => import("./pages/Technovision_Nov_26"));
+const TechnovisionNovAdminPortal = React.lazy(() => import("./pages/TechnovisionNovAdminPortal"));
 const FluxWave2_0 = React.lazy(() => import("./pages/FluxWave2_0"));
 const FluxRecruitment = React.lazy(() => import("./pages/Recruitment_26"));
 const FluxWavePublicAdmin = React.lazy(() => import("./pages/FluxWavePublicAdmin"));
@@ -126,6 +128,8 @@ export default function App() {
               <Route path="/events/flux-hard-wired" element={<Ideathon />} />
               <Route path="/Old-Site" element={<LegacySite />} />
               <Route path="/events/technovision-2026" element={<Technovision />} />
+              <Route path="/events/technovision-nov-2026" element={<TechnovisionNov2026 />} />
+              <Route path="/admin/events/technovision-nov-2026" element={<TechnovisionNovAdminPortal />} />
               <Route path="/events/fluxwave-2.0" element={<FluxWave2_0 />} />
               
               {/* Temporary, key-gated event admin — remove after FluxWave 2.0 ends */}
