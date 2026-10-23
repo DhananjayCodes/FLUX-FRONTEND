@@ -5,7 +5,6 @@ import {
   Send,
   User,
   Users,
-  Mail,
   Phone,
   GraduationCap,
   Building,
@@ -927,21 +926,15 @@ Please find the registration pass (PDF) attached.`;
                   <label className="block text-xs font-mono uppercase text-slate-500 dark:text-slate-400 mb-1 sm:mb-1.5 font-bold">
                     Email Address *
                   </label>
-                  <div className="relative">
-                    <Mail
-                      size={15}
-                      className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
-                    />
-                    <input
-                      id="reg-leader-email"
-                      type="email"
-                      required
-                      value={leader.email}
-                      onChange={(e) => updateLeader("email", e.target.value)}
-                      placeholder="yourname29cse051@satiengg.in"
-                      className="w-full bg-white dark:bg-black/60 border border-slate-300 dark:border-white/15 rounded-xl pl-9 pr-3.5 sm:px-4 py-2.5 sm:py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-cyan-500 dark:focus:border-cyan-400 text-xs sm:text-sm shadow-sm transition-colors"
-                    />
-                  </div>
+                  <input
+                    id="reg-leader-email"
+                    type="email"
+                    required
+                    value={leader.email}
+                    onChange={(e) => updateLeader("email", e.target.value)}
+                    placeholder="yourname29cse051@satiengg.in"
+                    className="w-full bg-white dark:bg-black/60 border border-slate-300 dark:border-white/15 rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-cyan-500 dark:focus:border-cyan-400 text-xs sm:text-sm shadow-sm"
+                  />
                 </div>
 
                 {/* Leader College */}
